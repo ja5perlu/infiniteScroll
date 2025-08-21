@@ -1,19 +1,19 @@
+
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import InfiniteScroll from './components/InfiniteScroll.vue'
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <h1>Infinite Scroll Example</h1>
     </div>
   </header>
-
-  <main>
-    <TheWelcome />
+  <main style="height: 60vh;">
+    <InfiniteScroll>
+      <!-- 後續將插入 repo 列表 -->
+    </InfiniteScroll>
   </main>
 </template>
 
