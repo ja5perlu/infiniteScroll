@@ -8,8 +8,8 @@
  * @returns {Promise<Array>} repo 陣列
  */
 export async function fetchUserRepos(username, page = 1, perPage = 10) {
-  const url = `https://api.github.com/users/${username}/repos?page=${page}&per_page=${perPage}&sort=updated`;
-  const res = await fetch(url)
-  if (!res.ok) throw new Error('Failed to fetch repos')
-  return await res.json()
+    const url = `https://api.github.com/users/${username}/repos?page=${page}&per_page=${perPage}&sort=updated`;
+    const res = await fetch(url)
+    if (!res.ok) throw new Error('Failed to fetch repos')
+    return await res.json()
 }
