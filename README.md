@@ -1,3 +1,10 @@
+# ⚠️ 請務必於專案根目錄建立 `.env` 檔案，並加入你的 GitHub Token：
+
+```
+VITE_GITHUB_TOKEN=你的 github personal access token
+```
+
+否則將無法正確取得 GitHub API 資料。
 # .
 
 This template should help get you started developing with Vue 3 in Vite.
